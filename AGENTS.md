@@ -10,19 +10,12 @@
 ## Important Notes
 
 - **NEVER run build commands** - user runs dev server manually
-- When completing tasks, run lint and type-check commands
 
 ## Available Commands
 
 ### Development
 
 - `yarn dev` - Start dev server (DO NOT RUN - user handles this)
-
-### Code Quality (Run these after changes)
-
-- `yarn type-check` - TypeScript type checking
-- `yarn lint` - Run all linters (oxlint + eslint)
-- `yarn format` - Format code with Prettier
 
 ### Build
 
