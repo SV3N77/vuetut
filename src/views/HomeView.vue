@@ -83,23 +83,23 @@ const games = ref<Game[]>([
         <p class="text-emerald-300 text-lg">Explore our curated selection of games</p>
       </header>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="game in games"
           :key="game.id"
           class="bg-emerald-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-300"
         >
           <div class="p-6">
-            <div class="flex items-start justify-between mb-4">
+            <div class="flex items-start justify-between pb-4">
               <h2 class="text-2xl font-bold text-emerald-900">{{ game.title }}</h2>
-              <span class="bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              <span class="bg-emerald-600 text-white text-xs font-semibold px-3 py-2 rounded-full">
                 {{ game.genre }}
               </span>
             </div>
 
-            <p class="text-emerald-700 text-sm mb-4 leading-relaxed">{{ game.summary }}</p>
+            <p class="text-emerald-700 text-sm leading-relaxed pb-2">{{ game.summary }}</p>
 
-            <p class="text-emerald-600 text-sm mb-4">{{ game.description }}</p>
+            <p class="text-emerald-600 text-sm pb-2">{{ game.description }}</p>
 
             <div class="flex items-center justify-between pt-4 border-t border-emerald-200">
               <div class="flex items-center gap-2">
